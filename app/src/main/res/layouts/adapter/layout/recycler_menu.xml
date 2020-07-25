@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/l_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="1" />
+
+    <!--Name and Price-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/l_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Pahi Restaurant"
+            android:textColor="@color/colorGrey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/l_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Rs 200"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!--Button to add/remove item-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/icon_add_item" />
+
+        <ImageView
+            android:id="@+id/iv_remove"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/icon_remove_item"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_cost_low_to_high"
+            android:title="Cost (low - high)" />
+        <item
+            android:id="@+id/nav_cost_high_to_low"
+            android:title="Cost (high - low)" />
+        <item
+            android:id="@+id/nav_rating"
+            android:title="Rating" />
+        <item
+            android:id="@+id/nav_name"
+            android:title="Name" />
+    </group>
+</menu>
